@@ -9,7 +9,7 @@ class Application
   end
 else
   resp.write "Route Not Found"
-  resp.status = 400
+  resp.status = 404
 end
 resp.finish
 end
