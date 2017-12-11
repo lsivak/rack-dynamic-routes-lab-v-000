@@ -13,10 +13,6 @@ else
   resp.write "Item not found"
   resp.status = 400
 end
-if !req.path.match(/items/)
-  resp. write "Route not found"
-  rep.status = 404
-end
 resp.finish
 end
 end
