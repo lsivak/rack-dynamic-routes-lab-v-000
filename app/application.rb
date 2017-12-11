@@ -5,7 +5,7 @@ class application
   if req.path == "/items/<ITEM NAME>"
     resp.write "#{item}\n"
   end
-else
+else 
   resp.write "Path Not Found"
 end
 resp.finish
