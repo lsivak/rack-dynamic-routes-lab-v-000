@@ -7,7 +7,8 @@ class application
     resp.write "#{price}\n"
   end
 else
-  resp.write "Path Not Found"
+  resp.write "Item Not Found"
+  resp.status = 400
 end
 resp.finish
 end
