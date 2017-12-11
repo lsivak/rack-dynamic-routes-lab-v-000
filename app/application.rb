@@ -9,15 +9,13 @@ class Application
     item_name = req.path.split("/items/").last
     item = @@items.find{|i| i.name == item_name}
     resp.write item.price
-elsif
-  !item
+else
   resp.write "Item not found"
   resp.status = 400
-
+end
 else
   resp.write "Route not found"
   resp.status = 404
 resp.finish
-end
 end
 end
