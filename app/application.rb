@@ -16,7 +16,7 @@ end
 if !req.path.match(/items/)
   resp. write "Route not found"
   rep.status = 404
-resp.finish
 end
+resp.finish
 end
 end
