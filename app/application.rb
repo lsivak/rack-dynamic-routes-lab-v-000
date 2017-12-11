@@ -2,7 +2,7 @@ class application
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
-  if req.path.match (/items/Item Name)
+  if req.path.match (/items/Item Name/)
     @@items.each do |name, price|
     resp.write "#{price}\n"
   end
