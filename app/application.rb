@@ -9,7 +9,6 @@ class Application
     item_price = req.path.split("/items/").last
     item = @@items.find{|i| i.price == item_price}
     resp.write "#{item_price}\n"
-  end
 else
   resp.write "Route not found"
   resp.status = 404
