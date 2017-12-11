@@ -4,3 +4,5 @@ class application
     req = Rack::Request.new(env)
   if req.path == "/items/<ITEM NAME>"
     resp.write "#{item}\n"
+  end
+else resp.write "Path Not Found"
